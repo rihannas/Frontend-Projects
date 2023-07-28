@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/video.css">
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Roboto:wght@400;500;700&family=Rubik+Puddles&display=swap"
+        rel="stylesheet">
+    <title>Youtube</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="left-section">
+            <img class="hamburger-menu"src="icons/hamburger-menu.svg" alt="">
+            <img class="youtube-logo"src="icons/youtube-logo.svg" alt="">
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" placeholder="search">
+            <button class="search-button">
+                <img class="search-icon" src="icons/search.svg" alt="">
+                <div class="tool-tip">Search</div>
+            </button>
+            <button class="search-voice-button">
+                <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="">
+                <div class="tool-tip">Voice Search</div>
+            </button>
+        </div>
+        <div class="right-section">
+            <div class="upload-icon-container">
+                <img class="upload-icon" src="icons/upload.svg" alt="">
+                <div class="tool-tip">Create</div>
+            </div>
+            
+            <div class="youtube-apps-icon-container">
+                <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="">
+                <div class="tool-tip">Apps</div>
+            </div>
+            
+            <div class="notif-icon-container">
+                <img class="notifications-icon" src="icons/notifications.svg" alt="">
+                <div class="notif-count">3</div>
+                <div class="tool-tip">Notifications</div>
+            </div>
+            <div class="profile-icon-container">
+                <img class="current-user-pic" src="pf/pf1.jpg" alt="">
+                <div class="tool-tip">Profile</div>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <div class="side-bar">
+        <div class="sidebar-link">
+            <img src="icons/home.svg" alt="" class="home-icon">
+            <div>Home</div>
+            
+        </div>
+        <div class="sidebar-link">
+             <img src="icons/explore.svg" alt="" class="explore-icon">
+             <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/subscriptions (1).svg" alt="" class="subs-icon">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/originals.svg" alt="" class="orginals-icon">
+            <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/youtube-music.svg" alt="" class="yt-music-icon">
+            <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/library.svg" alt="" class="library-icon">
+            <div>Library</div>
+        </div>
+    </div>
+
+    <div class="vid-grid">
+        <div class="video-preview">
+            <!-- two divs for vertical layout, b/c divs are block element  -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/img1.png">
+                <div class="video-time">14:20</div>
+            </div> 
+            <div class="vid-info-grid">
+                <!-- two divs for horizontal layout, we need to make them inline-block element -->
+                <div class="channel-pic">
+                    <img src="pf/pf1.jpg" alt="" class="pfp">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+                    
+                    <p class="video-author">
+                        Marques Browniee &#10003;
+                    </p>
+
+                    <p class="video-status">
+                        3.4M views &#183; 6 months ago
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+
+            <div class="thumbnail-row">
+                <!-- vertical layout 1 -->
+                <img class="thumbnail" src="thumbnails/img3.jpg">
+                <div class="video-time">14:20</div>
+            </div>
+
+            <div class="vid-info-grid">
+                <!-- vertical layout 2 -->
+
+                <div class="channel-pic">
+                    <!-- horizontal layout 1 -->
+                    <img src="pf/pf2.jpg" alt="" class="pfp">
+                </div>
+        
+                <div class="video-info">
+                    <!-- horizontal layout 2 -->
+                    <p class="video-title">
+                        Try Not Laugh Challenge #9
+                    </p>
+                    
+                    <p class="video-author">
+                        Markiplier &#10003;
+                    </p>
+                    
+                    <p class="video-status">
+                        19M views &#183; 4 years ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <!-- two divs for vertical layout, b/c divs are block element  -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/img3.jpg">
+                <div class="video-time">14:20</div>
+            </div>
+            <div class="vid-info-grid">
+                <!-- two divs for horizontal layout, we need to make them inline-block element -->
+                <div class="channel-pic">
+                    <img src="pf/pf1.jpg" alt="" class="pfp">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+        
+                    <p class="video-author">
+                        Marques Browniee &#10003;
+                    </p>
+        
+                    <p class="video-status">
+                        3.4M views &#183; 6 months ago
+                    </p>
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+        
+            <div class="thumbnail-row">
+                <!-- vertical layout 1 -->
+                <img class="thumbnail" src="thumbnails/img3.jpg">
+                <div class="video-time">14:20</div>
+            </div>
+        
+            <div class="vid-info-grid">
+                <!-- vertical layout 2 -->
+        
+                <div class="channel-pic">
+                    <!-- horizontal layout 1 -->
+                    <img src="pf/pf2.jpg" alt="" class="pfp">
+                </div>
+        
+                <div class="video-info">
+                    <!-- horizontal layout 2 -->
+                    <p class="video-title">
+                        Try Not Laugh Challenge #9
+                    </p>
+        
+                    <p class="video-author">
+                        Markiplier &#10003;
+                    </p>
+        
+                    <p class="video-status">
+                        19M views &#183; 4 years ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <!-- two divs for vertical layout, b/c divs are block element  -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/img1.png">
+                <div class="video-time">14:20</div>
+            </div>
+            <div class="vid-info-grid">
+                <!-- two divs for horizontal layout, we need to make them inline-block element -->
+                <div class="channel-pic">
+                    <img src="pf/pf1.jpg" alt="" class="pfp">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+        
+                    <p class="video-author">
+                        Marques Browniee &#10003;
+                    </p>
+        
+                    <p class="video-status">
+                        3.4M views &#183; 6 months ago
+                    </p>
+        
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+        
+            <div class="thumbnail-row">
+                <!-- vertical layout 1 -->
+                <img class="thumbnail" src="thumbnails/img3.jpg">
+                <div class="video-time">4:20</div>
+            </div>
+        
+            <div class="vid-info-grid">
+                <!-- vertical layout 2 -->
+        
+                <div class="channel-pic">
+                    <!-- horizontal layout 1 -->
+                    <img src="pf/pf2.jpg" alt="" class="pfp">
+                </div>
+        
+                <div class="video-info">
+                    <!-- horizontal layout 2 -->
+                    <p class="video-title">
+                        Try Not Laugh Challenge #9
+                    </p>
+        
+                    <p class="video-author">
+                        Markiplier &#10003;
+                    </p>
+        
+                    <p class="video-status">
+                        19M views &#183; 4 years ago
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
