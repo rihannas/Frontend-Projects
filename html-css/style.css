@@ -1,0 +1,37 @@
+header, p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(105, 44, 203);
+  height: 100vh;
+}
+header button, p button {
+  background-color: rgb(70, 252, 255);
+  border: 30px;
+  border-radius: 15px;
+  padding: 20px;
+  font-size: large;
+}
+header button:hover, p button:hover {
+  background-color: lightslategrey;
+}
+header button:hover::after, p button:hover::after {
+  content: "hello";
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(218, 43, 95);
+  height: 100vh;
+}
+.contact button {
+  background-color: rgb(70, 252, 255);
+}
+
+p {
+  height: 50px;
+}/*# sourceMappingURL=style.css.map */

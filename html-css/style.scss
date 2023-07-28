@@ -1,0 +1,21 @@
+$primaryBtn: rgb(70, 252, 255);
+
+
+
+@import './header';
+
+
+.contact {
+
+    @include flexCenter(row, rgb(218, 43, 95));
+    button{
+    background-color: $primaryBtn;
+
+}
+}
+
+p{
+    // inherting a style
+    @extend header;
+    height: 100px - 50px;
+}
