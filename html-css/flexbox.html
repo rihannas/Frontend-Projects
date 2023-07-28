@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./flexbox.css">
+    <title>flexbox</title>
+</head>
+<body style="padding-bottom: 1000px;">
+
+    <div style="
+        display: flex;
+        flex-direction: row;">
+        <div style="background-color: lightblue;">div 1 hello </div>
+        <div style="background-color: lightsalmon;">div 2 <p>para</p></div>
+    </div>
+
+    <div style="
+            display: flex;
+            flex-direction: row;
+            margin-top: 100px;">
+        <div style="background-color: lightblue; width:100px;">100px </div>
+        <div style="background-color: lightsalmon; flex:1;">flex1</div>
+    </div>
+
+    <div style="
+            display: flex;
+            flex-direction: row;
+            margin-top: 100px;">
+        <div style="background-color: lightsalmon; flex:1;">flex1</div>
+        <div style="background-color: rgb(167, 251, 165); width:100px;">100px </div>
+        <div style="background-color: lightblue; flex:2;">flex2</div>
+    </div>
+
+    <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 100px;
+                height: 70px;
+                border-style: solid;
+                border-color: grey;">
+        <div style="background-color: lightsalmon; width:100px;">flex1</div>
+        <div style="background-color: rgb(167, 251, 165); width:100px;">100px </div>
+        <div style="background-color: lightblue; width:100px;">flex2</div>
+    </div>
+
+    <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 100px;
+                height: 70px;
+                border-style: solid;
+                border-color: grey;">
+        <div style="background-color: lightsalmon; width:100px;">flex1</div>
+        <div style="background-color: rgb(167, 251, 165); width:100px;">100px </div>
+        <div style="background-color: lightblue; width:100px;">flex2</div>
+    </div>
+
+
+    <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 100px;
+                height: 70px;
+                border-style: solid;
+                border-color: grey;
+                align-items: center;">
+        <div style="background-color: lightsalmon; width:100px;">flex1</div>
+        <div style="background-color: rgb(167, 251, 165); width:100px;">100px </div>
+        <div style="background-color: lightblue; width:100px;">flex2</div>
+    </div>
+
+    <div style="
+        margin-top: 100px;
+        display: flex;">
+        <div style="background-color: lightseagreen; width: 200px">200px</div>
+        <div style="background-color: rgb(246, 246, 125); width: 75px">75px</div>
+    </div>
+
+    <div style="
+            margin-top: 100px;
+            display: flex;">
+        <div style="background-color: lightseagreen; width: 50px">item1</div>
+        <div style="background-color: rgb(246, 246, 125); flex:1;">item2</div>
+        <div style="background-color: lightseagreen; width: 75px">item3</div>
+    </div>
+
+    <div style="
+                margin-top: 100px;
+                display: flex;
+                justify-content: space-evenly;">
+        <div style="background-color: lightseagreen;">item1</div>
+        <div style="background-color: rgb(246, 246, 125);">item2</div>
+        <div style="background-color: lightseagreen;">item3</div>
+        <div style="background-color: rgb(246, 246, 125);">item2</div>
+    </div>
+
+    <div style="
+                margin-top: 100px;
+                margin-bottom: 100px;
+                display: flex;
+                justify-content: space-between;
+                border: 2px solid;
+                height: 50px;
+                align-items: center;">
+        <div style="background-color: lightseagreen;">item1</div>
+        <div style="background-color: rgb(246, 246, 125);">item2</div>
+    </div>
+    
+    <div class="header">
+        <div class="left-sec">
+            <p class="home">Home</p>
+        </div>
+        <div class="middle-sec">
+            <input placeholder="Search" type="text" class="search-bar">
+        </div>
+        <div class="right-sec">
+            <button class="download">Download</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="vertical">
+            <!-- vertical layout 1 -->
+            <div class="labels">
+                Home
+                <!-- horizontal layout 1 -->
+            </div>
+            
+            <div class="num">
+                14
+                <!-- horizontal layout 2 -->
+            </div>
+        </div>
+
+        <div class="vertical">
+            <!-- vertical layout 2 -->
+            <div class="labels">
+                Notifications
+                <!-- horizontal layout 1 -->
+            </div>
+        
+            <div class="num">
+                <!-- horizontal layout 2 -->
+                3
+            </div>
+        </div>
+
+        <div class="vertical">
+            <!-- vertical layout 3 -->
+            <div class="labels">
+                <!-- horizontal layout 1 -->
+                Messages
+            </div>
+            
+            <div class="num">
+                5
+                <!-- horizontal layout 2 -->
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="pro-container">
+            <!-- vertical layout 1 -->
+            <div class="profile-pic">
+                <!-- horizontal layout 1 -->
+                <img src="pf1.jpg" alt="" class="pfp">
+            </div>
+            <div class="profile-info">
+                <!-- horizontal layout 2 -->
+                <p class="name">Oliver</p>
+                <p class="bio">the cat</p>
+                <p class="status">Popular</p>
+            </div>
+        
+            <div class="button">
+                <!-- horizontal layout 3 -->
+                <button class="follow">Follow</button>
+            </div>
+        </div>
+        
+        <div class="pro-container">
+            <!-- vertical layout 2 -->
+            <div class="profile-pic">
+                <!-- horizontal layout 1 -->
+                <img src="pf3.jpg" alt="" class="pfp">
+            </div>
+            <div class="profile-info">
+                <!-- horizontal layout 2 -->
+                <p class="name">Mimi</p>
+                <p class="bio">happy happy</p>
+                <p class="status">Popular</p>
+            </div>
+        
+            <div class="button">
+                <!-- horizontal layout 3 -->
+                <button class="follow">Follow</button>
+            </div>
+        </div>
+        
+        <div class="pro-container">
+            <!-- vertical layout 3 -->
+            <div class="profile-pic">
+                <!-- horizontal layout 1 -->
+                <img src="pf2.jpg" alt="" class="pfp">
+            </div>
+            <div class="profile-info">
+                <!-- horizontal layout 2 -->
+                <p class="name">Rex</p>
+                <p class="bio">I sing</p>
+                <p class="status">Popular</p>
+            </div>
+        
+            <div class="button">
+                <!-- horizontal layout 3 -->
+                <button class="follow">Follow</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

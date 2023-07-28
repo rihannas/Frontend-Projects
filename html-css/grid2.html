@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <link rel="stylesheet" href="./grid.css">
+</head>
+<body style="padding-bottom: 1000px;">
+    <div style="
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
+        margin-bottom: 50px;
+        ">
+        <div style="background-color: lightblue;">div 100</div>
+        <div style="background-color: lightcoral;">div 100 <p>hello</p></div>
+        <div style="background-color: lightblue;">div 200</div>
+        <div style="background-color: lightcoral;">div 100
+        </div>
+    </div>
+
+    <div style="
+        display: grid;
+        grid-template-columns: 100px 100px;">
+        <div style="background-color: lightblue;">div1</div>
+        <div style="background-color: lightcoral;">div2 <p>hello</p></div>
+    </div>
+
+    <div style="
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            margin-top: 50px;">
+        <div style="background-color: lightblue;">div1</div>
+        <div style="background-color: lightcoral;">div 1fr</div>
+    </div>
+
+    <div style="
+                display: grid;
+                grid-template-columns: 100px 1fr 2fr;
+                margin-top: 50px;">
+        <div style="background-color: lightblue;">div1</div>
+        <div style="background-color: lightcoral;">div 1fr</div>
+        <div style="background-color: lightblue;">div 2fr</div>
+
+    </div>
+
+    <div style="
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 50px;
+        column-gap: 20px;
+        row-gap: 40px;">
+    <div style="background-color: lightblue; height: 200px;">div 1fr</div>
+    <div style="background-color: lightcoral; height: 200px;">div 1fr</div>
+    <div style="background-color: lightblue; height: 200px;">div 1fr</div>
+    <div style="background-color: lightcoral; height: 200px;">div 1fr</div>
+    <div style="background-color: lightblue; height: 200px;">div 1fr</div>
+    <div style="background-color: lightcoral; height: 200px;">div 1fr</div>
+
+    
+    </div>
+
+
+    <div
+    style="
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 200px 75px;
+        ">
+        <div style="background-color: lightcyan;">200px</div>
+        <div style="background-color: lightpink;">75px</div>
+    </div>
+
+    <div style="
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+            ">
+        <div style="background-color: lightcyan;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightcyan;">col3</div>
+    </div>
+
+    <div style="
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px;
+            ">
+        <div style="background-color: lightcyan;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightcyan;">col3</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightcyan;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightcyan;">col3</div>
+        <div style="background-color: lightpink;">col2</div>
+    </div>
+
+
+    <div class="profile-grid">
+
+        <div class="profile-card">
+            <!-- horizontal layout 3 -->
+            <div class="pfp-pic">
+                <!-- vertical layout 1 -->
+                <img src="girl2.jpg" alt="girl" class="pf">
+            </div>
+        
+            <div class="user-info">
+                <!-- vertical layout 2 -->
+                <div class="user-name">
+                    <!-- vertical layout 1 -->
+                    <p class="name">Jenny</p>
+                </div>
+        
+                <div class="pro-grid">
+                    <!-- vertical layout 2 -->
+                    <div class="mutual-pic">
+                        <!-- horizontal layout 1 -->
+                        <img src="pf1.jpg" alt="girl" class="mutual-pf">
+                    </div>
+        
+                    <div class="mutual-friends">
+                        <!-- horizontal layout 2 -->
+                        <p class="info">2 mutual friends</p>
+                    </div>
+                </div>
+        
+                <div class="add-button">
+                    <!-- vertical layout 3 -->
+                    <button class="addFriend">Add Friend</button>
+                </div>
+        
+            </div>
+        
+        </div>
+
+        <div class="profile-card">
+            <!-- horizontal layout 3 -->
+            <div class="pfp-pic">
+                <!-- vertical layout 1 -->
+                <img src="girl3.jpg" alt="girl" class="pf">
+            </div>
+        
+            <div class="user-info">
+                <!-- vertical layout 2 -->
+                <div class="user-name">
+                    <!-- vertical layout 1 -->
+                    <p class="name">jojo</p>
+                </div>
+        
+                <div class="pro-grid">
+                    <!-- vertical layout 2 -->
+                    <div class="mutual-pic">
+                        <!-- horizontal layout 1 -->
+                        <img src="pf1.jpg" alt="girl" class="mutual-pf">
+                    </div>
+        
+                    <div class="mutual-friends">
+                        <!-- horizontal layout 2 -->
+                        <p class="info">2 mutual friends</p>
+                    </div>
+                </div>
+        
+                <div class="add-button">
+                    <!-- vertical layout 3 -->
+                    <button class="addFriend">Add Friend</button>
+                </div>
+        
+            </div>
+        
+        </div>
+
+        <div class="profile-card">
+            <!-- horizontal layout 3 -->
+            <div class="pfp-pic">
+                <!-- vertical layout 1 -->
+                <img src="girl2.jpg" alt="girl" class="pf">
+            </div>
+        
+            <div class="user-info">
+                <!-- vertical layout 2 -->
+                <div class="user-name">
+                    <!-- vertical layout 1 -->
+                    <p class="name">Jenny</p>
+                </div>
+        
+                <div class="pro-grid">
+                    <!-- vertical layout 2 -->
+                    <div class="mutual-pic">
+                        <!-- horizontal layout 1 -->
+                        <img src="pf1.jpg" alt="girl" class="mutual-pf">
+                    </div>
+        
+                    <div class="mutual-friends">
+                        <!-- horizontal layout 2 -->
+                        <p class="info">2 mutual friends</p>
+                    </div>
+                </div>
+        
+                <div class="add-button">
+                    <!-- vertical layout 3 -->
+                    <button class="addFriend">Add Friend</button>
+                </div>
+        
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>

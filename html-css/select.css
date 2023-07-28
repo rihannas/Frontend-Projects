@@ -1,0 +1,8 @@
+/* This means tagging li that are the children of (inside of) ul */
+ul > li {
+    color: blueviolet;
+}
+
+a[href="https://www.cats.com"] {
+    color:crimson
+}

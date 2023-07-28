@@ -1,0 +1,158 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(123, 74, 169);
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.middle-sec {
+    background-color: chocolate;
+    align-items: center;
+    justify-content: right;
+    flex:1;
+    max-width: 1000px;
+    margin-left: 70px;
+    margin-right: 30px;
+}
+
+.search-bar {
+    width: 500px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 20px;
+    font-size: medium;
+}
+
+.left-sec{
+    width: 60px;
+    background-color: rgb(229, 229, 117);
+    margin-left: 10px;
+    
+}
+
+.home{
+    font-size: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.right-sec {
+    margin-right: 10px;
+    background-color: lightblue;
+    width: 120px;
+}
+
+.download {
+    background-color: rgb(123, 74, 169);
+    border: 1px solid white;
+    border-radius: 2px;
+    font-size: 17px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.container {
+    border: 1px solid grey;
+    width: 350px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+.labels {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1;
+}
+
+.num {
+    border: 1px solid;
+    background-color: rgb(99, 45, 248);
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+
+}
+
+.vertical {
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+.main-container {
+    margin-top: 100px;
+}
+
+.pro-container {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+
+
+.profile-info {
+    flex: 1
+}
+
+.button {
+    width: 600px;
+    padding-top: 10px;
+}
+
+
+.pfp {
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.name {
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.bio {
+    color: grey;
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+
+.status {
+    color: grey;
+    font-size: 16px;
+}
+
+.follow {
+    font-size: 18px;
+    background-color: rgb(54, 161, 255);
+    border: none;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}

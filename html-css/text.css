@@ -1,0 +1,211 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* as the class names are more specific than p element, priority is given to them 
+class name selector > elemnt name selector
+*/
+.video-title{
+    font-size: 18px;
+    font-weight: bold;
+    width: 280px;
+    margin-bottom: 5px;
+
+}
+
+.video-status{
+    font-size: 14px;
+    color: rgb(92, 92, 92);
+    margin-bottom: 20px;
+}
+
+.video-author {
+    font-size: 14px;
+    color: rgb(92, 92, 92);
+    margin-bottom: 20px;
+}
+
+.video-info {
+    font-size: 14px;
+    color: rgb(92, 92, 92);
+    width: 280px;
+    line-height: 22px;
+}
+
+.apple-text{
+    font-size: 14px;
+    background-color: rgb(225, 60, 60);
+    color: white;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.apple-span{
+    cursor: pointer;
+    margin-left: 12px;
+}
+.apple-span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tahoma{
+    font-family: Tahoma;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.saleday {
+    font-style: italic;
+    color: rgb(222, 57, 57);
+}
+
+.course-title{
+    font-family: verdana;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.course-bio{
+    font-family: verdana;
+    font-size: 14px;
+    color:grey;
+    margin-bottom: 20px;
+}
+
+.course-description {
+    font-family: verdana;
+    width:300px;
+    margin-bottom: 15px;
+}
+
+.course-starter{
+    color:white;
+    background-color: rgb(69, 139, 29);
+    border: none;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.title-1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+.title-2{
+    text-align: center;
+    
+    margin-bottom: 20px;
+}
+
+.title-link{
+    
+    font-size: 14px;
+    color: rgb(86, 121, 248);
+}
+
+.new{
+    text-align: center;
+    font-size: 13px;
+    color: rgb(255, 94, 0);
+    margin-bottom: 8px;
+}
+
+.product-name {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.product-description {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.price {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(85, 85, 85);
+    margin-bottom: 15px;
+}
+
+/* how to center a button */
+.buy{
+    background-color: rgb(72, 128, 249);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 669px;
+}
+
+.username{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.user{
+    color: rgb(119, 119, 119);
+    font-weight: normal;
+}
+
+.tweet{
+    width:500px;
+
+    
+}
+
+.tw2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.user1{
+    color: rgb(81, 191, 247);
+}
+
+.value{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.currency {
+    font-size: 15px;
+    color: grey;
+}
+
+.percentage {
+    color: rgb(70, 158, 70);
+    margin-bottom: 8px;
+
+}
+
+.time {
+    color:rgb(114, 114, 114)
+}
+
+.per2{
+    color:rgb(192, 57, 57)
+}
+
+
