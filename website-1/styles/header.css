@@ -1,0 +1,36 @@
+:root {
+    --pink: rgb(254, 156, 205);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-style:solid;
+}
+
+.line-over-nav, .line-below-nav {
+    border: 1px solid var(--pink)
+}
+
+.line-over-nav {
+    margin-bottom: 15px;
+}
+
+.line-below-nav {
+    margin-top: 15px;
+}
+
+
+
