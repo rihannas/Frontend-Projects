@@ -21,16 +21,52 @@ a:hover {
 }
 
 .line-over-nav, .line-below-nav {
-    border: 1px solid var(--pink)
+    border: 1px solid var(--pink);
 }
 
 .line-over-nav {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    margin-top: 50px;
 }
 
 .line-below-nav {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
+.side-bars{
+    position: relative;
+}
 
+.dashed-line, .solid-line {
+    border-left: 3px solid var(--pink);
+    height: 1500px;
+    position: absolute;
+    top: 0%;
+}
+
+#line-0{
+    left: 4%;
+    border-left-style: dashed;
+}
+
+#line-1{
+    left: 5%
+}
+
+#line-2 {
+    left: 6%
+}
+
+#line-3 {
+    right: 4%;
+    border-left-style: dashed;
+}
+
+#line-4 {
+    right: 5%
+}
+
+#line-5 {
+    right: 6%
+}
 
