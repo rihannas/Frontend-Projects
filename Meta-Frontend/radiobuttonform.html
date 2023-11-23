@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- radio buttons -->
+    <form action="POST">
+        <!-- fieldset allows radio buttons to belong to different groups -->
+        <fieldset id="size">
+            <!-- the id of the fieldset and name of the radio input should match, this tells the browser which input belongs to which fieldset -->
+            <!-- using label makes it easier to select the inputs without needing to press the radio buttons -->
+            <label>
+                <input type="radio" name="size" value="2"> 2 Person Table
+            </label>
+            <label>
+                <input type="radio" name="size" value="4"> 4 Person Table
+            </label>
+            <label>
+                <input type="radio" name="size" value="6"> 6 Person Table
+            </label>
+    
+            <fieldset id="location">
+                <label>
+                    <input type="radio" name="location" value="Outdoor"> Outdoor
+                </label>
+                <label>
+                    <input type="radio" name="location" value="Indoor"> Indoor
+                </label>
+            </fieldset>
+            <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

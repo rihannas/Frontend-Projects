@@ -1,0 +1,32 @@
+.row {
+    display: flex;
+    /* align-items controls the alignment along the cross axis */
+    align-items: stretch; 
+}
+
+.row .label {
+    flex: 0 0 auto;
+}
+
+.row .container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row .dish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dish-pizza {
+    background-color: crimson;
+}
+.dish-pasta{
+    background-color: rgb(196, 205, 92);
+}
+
+.dish-burrito {
+    background-color: cadetblue;
+}
