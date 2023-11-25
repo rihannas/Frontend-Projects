@@ -1,14 +1,17 @@
 // import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Main from './components/Main';
+import Sidebar from './components/Sidebar';
 
-function Header() {
-  return (
-    <h1>Hello World</h1>
-  )
-}
 function App() {
   return (
-    <Header />
+    <div>
+      <Header name='jk' color='purple'/>
+      <Main greet='hello'/>
+      <Sidebar info='this is sidebar'/>
+    </div>
+    
     );
 }
 
