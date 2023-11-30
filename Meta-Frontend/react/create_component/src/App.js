@@ -29,6 +29,7 @@ function App() {
       <FavColor/>
 
       <div>
+        {/* state lifting */}
       <h1>Where should the state go?</h1>
       <Fruits fruits={fruits} />
       <FruitsCounter fruits={fruits}/>
