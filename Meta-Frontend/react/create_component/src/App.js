@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import post from './assets/images/post.png'
 import React from "react";
+import ReactPlayer from 'react-player/youtube'
 import './App.css';
 import { Route, Routes, Link } from "react-router-dom";
 import Header from './components/Header';
@@ -87,6 +88,8 @@ function App() {
     <img src={require("./assets/images/post.png")} alt='burger' height={200}/>
 
     <img src={image} alt='time' height={200}/>
+    {/* or you can place this in another component and add that component here */}
+    <ReactPlayer url="https://www.youtube.com/shorts/fDCEIaDYKzs"/>
   </div>
 
 
