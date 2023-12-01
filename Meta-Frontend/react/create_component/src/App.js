@@ -23,6 +23,7 @@ function App() {
         {fruitName: 'plum', id: 3},
     ]);
 
+    const vidurl = "https://www.youtube.com/shorts/fDCEIaDYKzs"
     const time = new Date()
     const day = time.toLocaleString('en-us', {weekday:"long"})
     const morning = time.getHours() >= 6 && time.getHours() <=12
@@ -89,7 +90,7 @@ function App() {
 
     <img src={image} alt='time' height={200}/>
     {/* or you can place this in another component and add that component here */}
-    <ReactPlayer url="https://www.youtube.com/shorts/fDCEIaDYKzs"/>
+    <ReactPlayer url={vidurl} playing={true} muted={true}/>
   </div>
 
 
