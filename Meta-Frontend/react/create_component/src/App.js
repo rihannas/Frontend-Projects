@@ -19,6 +19,27 @@ function App() {
         {fruitName: 'apple', id: 2},
         {fruitName: 'plum', id: 3},
     ]);
+
+    const time = new Date()
+    const day = time.toLocaleString('en-us', {weekday:"long"})
+    const morning = time.getHours() >= 6 && time.getHours() <=12
+    let dayMessage
+
+    if (day.toLowerCase() === 'monday') {
+      dayMessage = `Happy ${day}`
+    } else if (day.toLowerCase() === 'tuesday'){
+      dayMessage = `Happy ${day}, 4 days to go`
+    } else if (day.toLowerCase() === 'wednesday'){
+      dayMessage = `Happy ${day}, half way there`
+    } else if (day.toLowerCase() === 'thurday'){
+      dayMessage = `Happy ${day}, start planning the weekend`
+    } else if (day.toLowerCase() === 'friday'){
+      dayMessage = `Happy ${day}, weekend is coming`
+    } else {
+      dayMessage = `Happy ${day}, have fun`
+    }
+
+
   return (
     <div>
       {/* nav bar making linking clickable */}
@@ -33,8 +54,13 @@ function App() {
           <Route path='/' element={<Welcome />}/>
           <Route path='/about-me' element={<AboutMe />}/>
       </Routes>
-      
 
+      <h1>
+        {dayMessage}
+      </h1>
+
+      {morning ? <h3>Have you had breakfast?</h3> : <h3>Have you had lunch?</h3>}
+      
 
       <Header name='jk' color='purple'/>
       <Main greet='hello'/>
