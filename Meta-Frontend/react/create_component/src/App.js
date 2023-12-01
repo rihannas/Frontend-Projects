@@ -23,6 +23,13 @@ function App() {
         {fruitName: 'plum', id: 3},
     ]);
 
+    const bird1 = new Audio(
+    "https://upload.wikimedia.org/wikipedia/commons/9/9b/Hydroprogne_caspia_-_Caspian_Tern_XC432679.mp3"
+  );
+
+    const bird2 = new Audio(
+      "https://upload.wikimedia.org/wikipedia/commons/b/b5/Hydroprogne_caspia_-_Caspian_Tern_XC432881.mp3"
+    );
     const vidurl = "https://www.youtube.com/shorts/fDCEIaDYKzs"
     const time = new Date()
     const day = time.toLocaleString('en-us', {weekday:"long"})
@@ -42,7 +49,21 @@ function App() {
     } else {
       dayMessage = `Happy ${day}, have fun`
     }
+    function toggle1() {
+    if (bird1.paused) {
+      bird1.play();
+    } else {
+      bird1.pause();
+    }
+  };
 
+  function toggle2() {
+    if (bird2.paused) {
+      bird2.play();
+    } else {
+      bird2.pause();
+    }
+  };
 
   return (
     <div>
@@ -65,6 +86,10 @@ function App() {
 
       {morning ? <h3>Have you had breakfast?</h3> : <h3>Have you had lunch?</h3>}
       
+      <div>
+      <button onClick={toggle1}>Caspian Tern 1</button>
+      <button onClick={toggle2}>Caspian Tern 2</button>
+      </div>
 
       <Header name='jk' color='purple'/>
       <Main greet='hello'/>
@@ -91,6 +116,8 @@ function App() {
     <img src={image} alt='time' height={200}/>
     {/* or you can place this in another component and add that component here */}
     <ReactPlayer url={vidurl} playing={true} muted={true}/>
+
+    
   </div>
 
 
