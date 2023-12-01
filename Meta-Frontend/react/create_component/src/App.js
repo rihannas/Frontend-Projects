@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import React from "react";
 import './App.css';
+import { Route, Routes, Link } from "react-router-dom";
 import Header from './components/Header';
 import Main from './components/Main';
 import Sidebar from './components/Sidebar';
@@ -9,6 +10,9 @@ import RegisterForm from './components/Form';
 import FavColor from './components/FavColor';
 import Fruits from "./components/Fruits";
 import FruitsCounter from "./components/FruitsCounter";
+import Welcome from "./components/Welcome"
+import AboutMe from "./components/AboutMe"
+
 function App() {
   const [fruits] = React.useState([
         {fruitName: 'apple', id: 1},
@@ -17,6 +21,21 @@ function App() {
     ]);
   return (
     <div>
+      {/* nav bar making linking clickable */}
+
+      <nav style={{'background-color':'salmon'}}>
+        <Link to="/" className="nav-item">HomePage</Link>
+        <Link to="/about-me" className="nav-item">About Me</Link>
+      </nav>
+
+      {/* setting up routes */}
+      <Routes>
+          <Route path='/' element={<Welcome />}/>
+          <Route path='/about-me' element={<AboutMe />}/>
+      </Routes>
+      
+
+
       <Header name='jk' color='purple'/>
       <Main greet='hello'/>
       <Sidebar info='this is sidebar'/>
