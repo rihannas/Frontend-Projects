@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+import post from './assets/images/post.png'
 import React from "react";
 import './App.css';
 import { Route, Routes, Link } from "react-router-dom";
@@ -14,6 +15,7 @@ import Welcome from "./components/Welcome"
 import AboutMe from "./components/AboutMe"
 
 function App() {
+  const image = "https://i.pinimg.com/474x/bf/10/c8/bf10c8f471ae29e4ec70e986ab539872.jpg"
   const [fruits] = React.useState([
         {fruitName: 'apple', id: 1},
         {fruitName: 'apple', id: 2},
@@ -79,11 +81,18 @@ function App() {
       <Fruits fruits={fruits} />
       <FruitsCounter fruits={fruits}/>
     </div>
-    </div>
+
+    <img src={post} alt='burger' height={200}/>
+
+    <img src={require("./assets/images/post.png")} alt='burger' height={200}/>
+
+    <img src={image} alt='time' height={200}/>
+  </div>
+
 
     
     
-    );
+  );
 }
 
 export default App;
