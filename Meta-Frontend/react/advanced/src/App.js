@@ -1,6 +1,7 @@
 import './App.css';
 import DessertsList from './comps/DessertsList';
 import NameList from './comps/NameList';
+import Comment from './comps/Comment';
 
 const desserts = [
   {
@@ -31,6 +32,7 @@ function App() {
         <h2>List of low calorie desserts:</h2>
       <DessertsList data={desserts} />
       <NameList />
+      <Comment />
     </div>
   );
 }
