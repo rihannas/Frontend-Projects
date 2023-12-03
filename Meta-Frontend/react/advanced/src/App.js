@@ -2,6 +2,7 @@ import './App.css';
 import DessertsList from './comps/DessertsList';
 import NameList from './comps/NameList';
 import Comment from './comps/Comment';
+import Form from './comps/Form';
 
 const desserts = [
   {
@@ -33,8 +34,10 @@ function App() {
       <DessertsList data={desserts} />
       <NameList />
       <Comment />
+      <Form />
     </div>
   );
+
 }
 
 export default App;
