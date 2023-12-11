@@ -116,7 +116,6 @@ function App() {
     <img src={image} alt='time' height={200}/>
     {/* or you can place this in another component and add that component here */}
     <ReactPlayer url={vidurl} playing={true} muted={true}/>
-
     
   </div>
 

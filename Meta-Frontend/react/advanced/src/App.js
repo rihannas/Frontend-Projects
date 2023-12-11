@@ -3,6 +3,8 @@ import DessertsList from './comps/DessertsList';
 import NameList from './comps/NameList';
 import Comment from './comps/Comment';
 import Form from './comps/Form';
+import { ThemeProvider } from './comps/ThemeContext';
+import Switch from './comps/Switch';
 
 const desserts = [
   {
@@ -30,11 +32,14 @@ const desserts = [
 function App() {
   return (
     <div className="App">
-        <h2>List of low calorie desserts:</h2>
+        {/* <h2>List of low calorie desserts:</h2>
       <DessertsList data={desserts} />
       <NameList />
       <Comment />
-      <Form />
+      <Form /> */}
+      <ThemeProvider>
+        <Switch />
+      </ThemeProvider>
     </div>
   );
 
